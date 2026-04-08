@@ -3,34 +3,94 @@ body {
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
+  margin: 0;
 }
 
 h1 {
   color: #F5A623;
+  margin-top: 20px;
 }
 
-#searchInput {
+
+input, select, button {
   padding: 10px;
-  width: 60%;
-  margin: 20px;
-  border-radius: 5px;
+  margin: 10px;
+  border-radius: 6px;
   border: none;
+  font-size: 14px;
 }
+
+input {
+  width: 40%;
+  min-width: 220px;
+}
+
+
+button {
+  background: #F5A623;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
 
 #movies {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
+
 .movie {
   background: #111;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
 }
 
 .movie img {
   width: 100%;
   border-radius: 10px;
+}
+
+
+.movie h3 {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+
+.movie p {
+  color: #F5A623;
+  margin: 5px 0;
+}
+
+.movie button {
+  width: 100%;
+  background: #222;
+  color: white;
+}
+
+
+.light {
+  background: #f4f4f4;
+  color: black;
+}
+
+.light .movie {
+  background: white;
+}
+
+.light .movie button {
+  background: #ddd;
+  color: black;
 }

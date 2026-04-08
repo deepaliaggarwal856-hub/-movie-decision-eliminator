@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <title>WatchWise</title>
+
   <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
   <h1>🎬 WatchWise</h1>
+  <div>
+    <input type="text" id="searchInput" placeholder="Search movies...">
 
-  <input type="text" id="searchInput" placeholder="Search movies...">
 
+    <select id="filterRating">
+
+      <option value="all">All Movies</option>
+
+      <option value="popular">Popular</option>
+
+      <option value="rating4">4 ⭐ & above</option>
+
+      <option value="rating3">3 ⭐ & above</option>
+
+      <option value="liked">Liked 👍</option>
+
+      <option value="disliked">Disliked 👎</option>
+
+    </select>
+
+    <select id="sortSelect">
+
+      <option value="">Sort</option>
+
+      <option value="az">Title A-Z</option>
+
+      <option value="za">Title Z-A</option>
+
+      <option value="highRating">Highest Rated</option>
+
+      <option value="lowRating">Lowest Rated</option>
+
+    </select>
+
+    <button id="toggleMode">
+      Toggle Mode 🌙
+    </button>
+
+  </div>
+
+ 
   <div id="movies"></div>
 
   <script src="script.js"></script>
+
+
 </body>
+
 </html>
