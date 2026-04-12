@@ -1,92 +1,95 @@
-# 🎬 WatchWise – Movie Decision Eliminator
+🎬 WatchWise – Movie Decision Eliminator
 
-## 📌 Overview
-WatchWise is a web application designed to help users quickly decide what movie to watch. Instead of endlessly scrolling, users can interact with movie suggestions by liking or skipping them, and the app recommends the best option based on their preferences.
+📌 Overview
 
-## 🎯 Objective
-The goal of this project is to demonstrate:
-- API integration using JavaScript
-- Dynamic UI rendering
-- Use of array methods for filtering, sorting, and searching
-- Interactive user experience design
+WatchWise is a web app that helps users quickly choose what movie to watch. It fetches real-time movie data, allows searching, filtering, sorting, and lets users like or dislike movies.
 
-## 🚀 Features
+⸻
 
-### 🎥 Core Functionality
-- Fetch movies dynamically using OMDb API  
-- Display movie posters, titles, and ratings  
+🌐 Live Demo
 
-### 🔍 Search
-- Search movies by name  
-- Real-time filtering using JavaScript  
+https://movie-decision-eliminator.vercel.app/
 
-### 🎯 Filter & Sort
-- Filter by rating/category  
-- Sort by:
-  - Rating  
-  - Popularity  
+⸻
 
-### ❤️ User Interaction
-- Like (save) movies  
-- Skip movies  
-- Store liked movies using localStorage  
+🚀 Features
+	•	Fetch trending movies (TMDB API)
+	•	Search movies (real-time, debounced)
+	•	Filter by:
+	•	Popularity
+	•	Rating (3⭐ / 4⭐ & above)
+	•	Liked / Disliked movies
+	•	Sort by:
+	•	Title (A–Z / Z–A)
+	•	Rating (High → Low / Low → High)
+	•	Like 👍 / Dislike 👎 movies
+	•	Data stored using localStorage
+	•	Dark mode + Light mode toggle
+	•	Responsive UI
 
-### ⭐ Recommendation System
-- Suggests best movie based on user preferences  
+⸻
 
-## 🔌 API Used
-**OMDb API (Open Movie Database)**  
+🔌 API Used
 
-Example:
-https://www.omdbapi.com/?s=batman&apikey=YOUR_API_KEY
+TMDB (The Movie Database)
+	•	Base URL: https://api.themoviedb.org/3
+	•	Endpoints:
+	•	/trending/movie/week
+	•	/search/movie
+	•	Image URL:
+https://image.tmdb.org/t/p/w500
 
-## 🛠️ Tech Stack
-- HTML  
-- CSS  
-- JavaScript (Vanilla JS)  
-- Fetch API  
+⸻
 
-## ⚙️ How It Works
-1. Fetch movie data from OMDb API  
-2. Display movies as interactive cards  
-3. User can like or skip movies  
-4. Liked movies are stored (localStorage)  
-5. App recommends the best movie based on user behavior  
+🛠️ Tech Stack
+	•	HTML
+	•	CSS
+	•	JavaScript (Vanilla JS)
+	•	Fetch API
+	•	LocalStorage
 
-## 📂 Project Structure
-WatchWise/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
+⸻
 
-## 📦 Setup Instructions
-
-1. Clone the repository:
+⚙️ Setup
+	1.	Clone repo
 git clone https://github.com/deepaliaggarwal856-hub/-movie-decision-eliminator
-
-2. Open the project folder:
+	2.	Open folder
 cd WatchWise
+	3.	Add API key in script.js
+const API_KEY = “your_api_key_here”;
+	4.	Open index.html
 
-3. Get your API key:
-http://www.omdbapi.com/apikey.aspx  
+⸻
 
-4. Add it in script.js:
-const API_KEY = "your_api_key_here";
+📂 Structure
 
-5. Open index.html in your browser  
+WatchWise/
+	•	index.html
+	•	style.css
+	•	script.js
+	•	README.md
 
-## 📅 Milestones
-- ✅ Milestone 1: Idea, API selection, repo setup  
-- ✅ Milestone 2: API integration & dynamic UI  
-- ✅ Milestone 3: Search, filter, sort, interactions  
-- ✅ Milestone 4: Refactoring & deployment  
+⸻
 
-## ⭐ Future Improvements
-- Swipe-based UI  
-- AI-based recommendations  
-- Better UI/UX  
-- Pagination  
+📅 Milestones
 
-## 🙌 Author
+Milestone 1
+	•	Idea + API + Repo + README
+
+Milestone 2
+	•	Fetch API + movie display
+
+Milestone 3
+	•	Search, filter, sort, interactions
+
+Milestone 4
+	•	Code improvement
+	•	Dark/Light mode
+	•	localStorage integration
+	•	UI improvements
+
+⸻
+
+👩‍💻 Author
+
 Deepali Aggarwal
